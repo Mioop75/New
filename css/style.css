@@ -93,6 +93,7 @@ body {
 .btn:hover {
     background-color: #227de5;
     transition: background-color 1s;
+    cursor: pointer;
 }
 
 .about_me {
@@ -108,8 +109,8 @@ body {
     font-weight: 500;
 }
 
-.about_me > span {
-    padding-left: 15px;
+.about_me .text > span {
+    padding-left: 150px;
 }
 
 .about_me > .text {
@@ -212,12 +213,19 @@ body {
     padding-bottom: 50px;
 }
 
-.work > p {
+.work > .text {
+    text-indent: 30px;
     width: 540px;
     padding-bottom: 57px;
 }
 
-.work_img {
+.work .text > span {
+    padding-left: 150px;
+}
+
+.work_video {
+    background: url("../img/main/Vector.png") 50% 50% no-repeat, url("../img/main/Rectangle5.png") no-repeat;
+    background-size: auto, cover;
     width: 1110px;
     height: 600px;
     margin-left: 100px;
@@ -241,26 +249,74 @@ body {
 }
 
 .main_img1 {
+    position: relative;
     display: block;
-    width: 24%;
+    width: 25%;
     height: 480px;
     background: url("../img/main/Rectangle7.png");
 }
 
 .main_img2 {
+    position: relative;
     display: block;
-    width: 24%;
+    width: 25%;
     height: 480px;
     background: url("../img/main/Rectangle7.3.png");
 }
 
-.main_img1:hover {
-    opacity: 0.25;
+.main_img1:after { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));  
+    opacity: 0; 
 }
 
-.main_img2:hover {
-    opacity: 0.25;
+.main_img1:before { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: url("../img/main/Group.png") 50% 50% no-repeat; 
+    opacity: 0; 
 }
+
+.main_img1:hover:before,
+.main_img1:hover:after { 
+    opacity: 1; 
+}
+
+.main_img2:after { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));  
+    opacity: 0; }
+
+.main_img2:before { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: url("../img/main/Group.png") 50% 50% no-repeat; 
+    opacity: 0; 
+}
+
+.main_img2:hover:before,
+.main_img2:hover:after { 
+    opacity: 1; 
+}
+
 
 .main_clients {
     margin-top: 70px;
@@ -287,9 +343,14 @@ body {
 }
 
 .form > .text {
+    text-indent: 30px;
     width: 540px;
     text-indent: 31px;
     padding-bottom: 65px;
+}
+
+.form .text > span {
+    margin-left: 150px;
 }
 
 .form_information > input[placeholder] {
@@ -339,6 +400,13 @@ form > button {
     letter-spacing: 0.15em;
     margin-left: 200px;
     margin-top: 50px;
+    border: none;
+}
+
+form > button:hover {
+    cursor: pointer;
+    background-color: #227de5;
+    transition: background-color 1s;
 }
 
 .footer {
