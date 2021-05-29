@@ -238,11 +238,6 @@ body {
 }
 
 .main_blocks {
-    margin-top: 28px;
-}
-
-.main_blocks {
-    margin-left: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -255,6 +250,7 @@ body {
     height: 25vw;
     background: url("../img/main/Rectangle7.png");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .main_img2 {
@@ -264,6 +260,7 @@ body {
     height: 25vw;
     background: url("../img/main/Rectangle7.3.png");
     background-size: contain;
+        background-repeat: no-repeat;
 }
 
 .main_img1:after { 
