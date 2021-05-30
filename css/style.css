@@ -67,7 +67,7 @@ body {
 }
 
 .header_block > .text {
-    width: 560px;
+    max-width: 560px;
     padding-top: 60px;
     padding-bottom: 50px;
 } 
@@ -317,6 +317,7 @@ body {
 .main_img2:hover:before,
 .main_img2:hover:after { 
     opacity: 1; 
+    transition: 0.5s all;
 }
 
 
