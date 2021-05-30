@@ -149,6 +149,7 @@ body {
 .skills {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .skill_my {
@@ -227,7 +228,8 @@ body {
 .work_video {
     background: url("../img/main/Vector.png") 50% 50% no-repeat, url("../img/main/Rectangle5.png") no-repeat;
     background-size: auto, cover;
-    width: 1110px;
+    max-width: 1110px;
+    width: 90%;
     height: 600px;
 }
 
@@ -323,6 +325,7 @@ body {
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main_clients > img:first-child {
